@@ -39,7 +39,7 @@ export function Home() {
   }, []));
 
   function handleFilterLoginData(search: string) {
-    if (search==='') {
+    if (!search) {
       return setSearchListData(data);
     }
     
